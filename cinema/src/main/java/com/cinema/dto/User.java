@@ -1,15 +1,14 @@
 package com.cinema.dto;
 
-public class User {
+public class User extends Person{
 	private String userName;
 	private String userPassword;
-	private String nom;
+	
 	
 	
 	public User(String userName, String userPassword, String nom) {
 		this.userName = userName;
 		this.userPassword = userPassword;
-		this.nom = nom;
 	}
 	
 	/**
@@ -24,18 +23,7 @@ public class User {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	/**
-	 * @return the nom
-	 */
-	public String getNom() {
-		return nom;
-	}
-	/**
-	 * @param nom the nom to set
-	 */
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
+	
 	public String getUserPassword() {
 		return userPassword;
 	}
